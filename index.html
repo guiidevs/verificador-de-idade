@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <hr>
+        <div id="form">
+            <p id="nasc">
+            <label for="">Ano de nascimento:</label><br>
+            <input type="number" name="" id="nascimento" min="1900" placeholder="1900">
+            </p><br>
+            
+            <fieldset>
+            <legend><label for="">Sexo:</label></legend>
+            <input type="radio" name="sexo" id="mas" value="masculino">
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="feminino">
+            <label for="fem">Feminino</label>
+            
+            </fieldset><br>
+            <p id="btn">
+            <button onclick="validacao()">Verificar</button>
+            </p><br>
+            <div id="legenda">
+                
+            </div>
+        
+        </div>
+        
+        <div id="resultado">
+ 
+            <span id="final">Detectamos um (sexo) com (idade) anos.</span><br>
+            <img id="imagem" src="" alt="imagem de uma pessoa">
+ 
+        </div>
+
+    </main>
+    <footer>
+        &copy; Todos os direitos reservados a Guilherme Developer.
+    </footer>
+    <script src="config.js"></script>
+</body>
+</html>
